@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// --------------------variables--------------------
+$primary: #3E86F5;
+$primary_hoverd: #0066ff;
+
+// --------------------variables Ended--------------------
+@mixin flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin gridy {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+* {
+    font-family: 'Poppins',
+        sans-serif !important;
+
+}
+
+
+
+
+
+.nav_bar {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+
+    .containerr {
+        padding: 10px 0;
+        @include flexy();
+        justify-content: space-between;
+
+        .nav_bar_logo {
+            i {
+                display: none;
+            }
+
+            a {
+                @include flexy();
+
+                text-decoration: none;
+
+                * {
+                    color: white;
+                    @include flexy();
+                }
+
+                span {
+                    font-size: 25px !important;
+                    @include flexy();
+                }
+
+                i {
+                    font-size: 20px;
+                    @include flexy();
+                }
+            }
+
+        }
+
+        .nav_bar_list {
+            @include flexy();
+            list-style: none;
+            height: 100% !important;
+
+            margin: auto;
+
+            &>i {
+                display: none;
+            }
+
+            li {
+                margin: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        button {}
+    }
+}
+
+.List_your_rental {
+    border: none;
+    outline: none;
+    background-color: $primary !important;
+    color: white !important;
+    font-size: 20px !important;
+    padding: 0 !important;
+    height: 100% !important;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    transition: transform 0.3s;
+
+
+    &:active {
+        transform: scale(0.95, 0.95);
+    }
+
+    &:hover .inner {
+        clip-path: circle(100%);
+    }
+
+    .inner {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        background-color: $primary_hoverd;
+        clip-path: circle(0% at 100% 100%);
+        transition: clip-path .25s ease-in-out;
+        z-index: -1;
+    }
+
+    .text {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        padding: 8px;
+    }
+}
+
+
+
+
+
+.hero {
+    height: 100vh;
+    background-image: url("/resources/heroSection.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .inner {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+
+        .social_media {
+            position: fixed;
+            @include flexy();
+            flex-direction: column;
+            color: white;
+            padding: 15px;
+            margin-top: 50vh;
+
+            i {
+                font-size: 30px;
+                margin: 5px 0px;
+                cursor: pointer;
+            }
+        }
+
+        .container {
+            height: 100%;
+            @include gridy();
+            position: relative;
+
+            .scroll {
+                position: absolute;
+                bottom: 0;
+                margin: 20px auto;
+
+                &:hover a i {
+                    color: $primary;
+                }
+
+                a {
+                    @include flexy();
+                    flex-direction: column;
+
+                    .first {
+                        transform: translateY(25px);
+                        animation: scroll;
+                        animation-duration: 3s;
+                        animation-iteration-count: infinite;
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    i {
+                        font-size: 30px;
+                        color: white;
+                        transition: 0.3s;
+                    }
+                }
+            }
+
+            .inner_text {
+                text-align: center;
+                @include flexy();
+                flex-direction: column;
+
+                * {
+                    color: white;
+                }
+
+                h1 {
+                    width: 1000px;
+                    font-weight: bold;
+
+                    span {
+                        color: $primary;
+                    }
+                }
+
+                button {
+                    background-color: $primary_hoverd !important;
+                    color: white !important;
+                    font-weight: normal !important;
+                    transition: transform 0.3s;
+
+                    &:active {
+                        transform: scale(0.95, 0.95);
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                }
+
+                span {
+                    margin: 10px 0px 0px 0px !important;
+
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(25px);
+
+    }
+
+    50% {
+        transform: translateY(35px);
+
+    }
+
+    100% {
+        transform: translateY(25px);
+
+    }
+}
+
+.nav_bar_list_showcloseanimation {
+    clip-path: circle(100%) !important;
+
+}
+
+.why_us_section {
+    .container {
+        .row {
+            padding: 100px;
+            align-items: center;
+
+            .col-6 {
+                &>img {
+                    display: block;
+                }
+
+                .celll {
+                    @include flexy();
+                    flex-direction: column;
+
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ---------Media Query---------
+@media only screen and (max-width: 600px) {
+    .nav_bar {
+        .containerr {
+            .nav_bar_logo {
+                width: 100%;
+                @include flexy();
+                justify-content: space-between;
+                padding: 10px 15px;
+
+                &>i {
+                    font-size: 35px !important;
+                    font-weight: bold;
+                    color: white;
+                    @include flexy();
+                    cursor: pointer;
+                }
+            }
+
+            .nav_bar_list {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $primary;
+                flex-direction: column;
+                clip-path: circle(0% at 100% 0%);
+
+                transition: clip-path .5s ease-in-out;
+
+                &>i {
+                    position: absolute;
+                    @include flexy();
+                    top: 0;
+                    right: 0;
+                    margin: 15px;
+                    color: white;
+                    font-size: 35px;
+                    cursor: pointer;
+                }
+
+                li {
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .List_your_rental {
+                display: none;
+            }
+        }
+
+
+    }
+
+    .hero {
+        .inner {
+            .social_media {
+                display: none;
+            }
+
+            .container {
+                .scroll {}
+
+                .inner_text {
+                    text-align: center;
+                    @include flexy();
+                    flex-direction: column;
+
+                    * {
+                        color: white;
+                    }
+
+                    h1 {
+                        font-size: 40px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .nav_bar {
+        .containerr {
+            width: 100% !important;
+
+            .nav_bar_logo {
+                width: 100%;
+                @include flexy();
+                justify-content: space-between;
+                padding: 10px 15px;
+
+                &>i {
+                    font-size: 35px !important;
+                    font-weight: bold;
+                    color: white;
+                    cursor: pointer;
+                    @include flexy();
+                }
+            }
+
+            .nav_bar_list {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $primary;
+                flex-direction: column;
+                clip-path: circle(0% at 100% 0%);
+                transition: clip-path .5s ease-in-out;
+
+                &>i {
+                    position: absolute;
+                    @include flexy();
+                    top: 0;
+                    right: 0;
+                    margin: 15px;
+                    cursor: pointer;
+                    color: white;
+                    font-size: 35px;
+                }
+
+                li {
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .List_your_rental {
+                display: none;
+            }
+        }
+    }
+
+    .hero {
+        .inner {
+            .social_media {
+                // display: none;
+            }
+
+            .container {
+                .scroll {}
+
+                .inner_text {
+                    text-align: center;
+                    @include flexy();
+                    flex-direction: column;
+
+                    * {
+                        color: white;
+                    }
+
+                    h1 {
+                        font-size: 40px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+// ---------Media Query Ended---------
