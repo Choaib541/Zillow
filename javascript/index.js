@@ -8,3 +8,6 @@ document.querySelector(".bi-x").onclick = () => {
     .querySelector(".nav_bar_list")
     .classList.remove("nav_bar_list_showcloseanimation");
 };
+window.onload = () => {
+  scrollY = 914;
+};
