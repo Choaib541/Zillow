@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Zillow</title>
+    <title>PILLOW</title>
+    <link rel="shortcut icon" href="/resources/logo.png" />
     <!--Viewport-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,17 +30,109 @@
       <div class="containerr container-xl">
         <div class="nav_bar_logo">
           <a href="#"
-            ><span>ZILL</span><i class="bi bi-house-fill"></i><span>W</span></a
+            ><span>PILL</span><i class="bi bi-house-fill"></i><span>W</span></a
           >
           <i class="bi bi-list"></i>
         </div>
         <ul class="nav_bar_list">
           <i class="bi bi-x"></i>
           <li>
-            <a href="#">Zillow Rental</a>
+            <div class="dropdown">
+              <button
+                class="bg-transparent"
+                style="outline: none; border: none; color: white"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PILLOW Rental
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a
+                    style="color: black !important"
+                    class="dropdown-item"
+                    href="#"
+                  >
+                    Rental Listings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    style="color: black !important"
+                    class="dropdown-item"
+                    href="#"
+                    >Tenant Screening
+                  </a>
+                </li>
+                <li>
+                  <a
+                    style="color: black !important"
+                    class="dropdown-item"
+                    href="#"
+                    >Online Leases
+                  </a>
+                </li>
+                <li>
+                  <a
+                    style="color: black !important"
+                    class="dropdown-item"
+                    href="#"
+                    >Rent Payments
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
-            <a href="#">Manager</a>
+            <div class="dropdown">
+              <button
+                class="bg-transparent"
+                style="outline: none; border: none; color: white"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Manager
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a
+                    style="color: black !important"
+                    class="dropdown-item"
+                    href="#"
+                  >
+                    Rental Listings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    style="color: black !important"
+                    class="dropdown-item"
+                    href="#"
+                    >Tenant Screening
+                  </a>
+                </li>
+                <li>
+                  <a
+                    style="color: black !important"
+                    class="dropdown-item"
+                    href="#"
+                    >Online Leases
+                  </a>
+                </li>
+                <li>
+                  <a
+                    style="color: black !important"
+                    class="dropdown-item"
+                    href="#"
+                    >Rent Payments
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="#">Resources</a>
@@ -57,17 +150,149 @@
     </nav>
 
     <!--Navbar Ended-->
+    <!--listing-->
+    <div class="listing">
+      <div class="innerlisting">
+        <i class="bi bi-x trigger_close"></i>
+        <div class="loginbox">
+          <div class="roww fst fstttt">
+            <div class="column fstcolumn">
+              <h2>PILLOW Login</h2>
+              <form action="#">
+                <div class="form-floating">
+                  <input
+                    class="form-control"
+                    type="Email"
+                    name="em"
+                    placeholder="Email Address"
+                    id="em"
+                  />
+                  <label for="em">Email Address</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    class="form-control"
+                    type="Password"
+                    name="Pa"
+                    placeholder="Email Address"
+                    id="Pa"
+                  />
+                  <label for="Pa">Password</label>
+                </div>
+                <button class="btn btn-lg btn-primary">Log In</button>
+                <span><p>OR</p></span>
+                <div class="socialmedia">
+                  <i style="color: #de3f32" class="bi bi-google"></i
+                  ><i class="bi bi-github"></i
+                  ><i style="color: #4267b2" class="bi bi-facebook"></i>
+                </div>
+              </form>
+            </div>
+            <div class="column second_column">
+              <img src="/resources/Untitled-1.png" class="img-fluid" />
+              <a class="Sign_up" href="#"
+                ><h3>Sign up</h3>
+                <i class="bi bi-arrow-right-short"></i
+              ></a>
+            </div>
+          </div>
+          <div class="second seconnnnnd">
+            <div class="column fstcolumn">
+              <h2>PILLOW Sign up</h2>
+              <form action="#">
+                <div class="firstname_lastname">
+                  <div class="form-floating">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="First"
+                      placeholder="First Name"
+                      id="First"
+                    />
+                    <label for="First">First Name</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      class="form-control"
+                      type="Email"
+                      name="Last"
+                      placeholder="Last Name"
+                      id="Last"
+                    />
+                    <label for="Last">Last Name</label>
+                  </div>
+                </div>
+                <div class="firstname_lastname">
+                  <div class="form-floating">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Region"
+                      placeholder="Region"
+                      id="Region"
+                    />
+                    <label for="Region">Region</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      class="form-control"
+                      type="Email"
+                      name="Last"
+                      placeholder="zipcode"
+                      id="zipcode"
+                    />
+                    <label for="zipcode">zipcode</label>
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <input
+                    class="form-control"
+                    type="Email"
+                    name="ema"
+                    placeholder="Email Address"
+                    id="ema"
+                  />
+                  <label for="ema">Email Address</label>
+                </div>
+                <div class="form-floating">
+                  <input
+                    class="form-control"
+                    type="Password"
+                    name="Pas"
+                    placeholder="Email Address"
+                    id="Pas"
+                  />
+                  <label for="Pas">Password</label>
+                </div>
+                <button class="btn btn-lg btn-light">Log In</button>
+                <span><p>OR</p></span>
+                <div class="socialmedia">
+                  <i class="bi bi-google"></i><i class="bi bi-github"></i
+                  ><i class="bi bi-facebook"></i>
+                </div>
+              </form>
+            </div>
+            <div class="column scndcolumn">
+              <img src="/resources/wave.png" class="img-fluid" />
+              <a class="log_in_in" href="#"
+                ><h3>Log In</h3>
+                <i class="bi bi-arrow-right-short"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="trigger">
+      <span class="p">P</span>
+    </button>
+    <!--listing Ended-->
     <!--Hero-->
     <div class="hero">
       <div class="inner">
-        <div class="social_media">
-          <i class="bi bi-github"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-instagram"></i>
-        </div>
         <div class="container">
           <div class="scroll">
-            <a href="#">
+            <a href="#down">
               <i class="bi bi-chevron-down first"></i>
               <i class="bi bi-chevron-down second"></i>
             </a>
@@ -77,7 +302,7 @@
               List your rental. Screen tenants. Sign a lease. Get
               <span>paid.</span>
             </h1>
-            <p>All in one place with Zillow Rental Manager</p>
+            <p>All in one place with PILLOW Rental Manager</p>
             <button class="List_your_rental">
               <div class="inner"></div>
               <div class="text">
@@ -92,49 +317,377 @@
     </div>
     <!--Hero Ended-->
     <!--Whyus -->
-    <!-- <div class="why_us_section">
+    <div id="down" class="why_us_section">
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            <img src="/resources/ww0.jpg" class="img-fluid" />
+          <div class="col-md-6 img-section">
+            <div class="inner_img">
+              <img src="/resources/ww0.jpg" />
+              <div class="span_container">
+                <span class="visitord"
+                  ><p>30M+</p>
+                  Visitors</span
+                >
+                <span class="brand"
+                  ><p>A brand you</p>
+                  can trust</span
+                >
+                <span class="properties"
+                  ><p>200+</p>
+                  properties</span
+                >
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <div class="celll">
-              <img src="/resources/ww1.png" class="img-fluid" />
-              <div class="content">
-                <span class="title">Fill vacancies and manage properties</span>
-                <p>
-                  Landlording made simple, whether you have one rental or an
-                  entire portfolio.
-                </p>
-              </div>
-            </div>
-            <div class="celll">
-              <img src="/resources/ww2.png" class="img-fluid" />
-              <div class="content">
-                <span class="title">Fill vacancies and manage properties</span>
-                <p>
-                  Landlording made simple, whether you have one rental or an
-                  entire portfolio.
-                </p>
-              </div>
-            </div>
-            <div class="celll">
-              <img src="/resources/ww3.png" class="img-fluid" />
-              <div class="content">
-                <span class="title">Fill vacancies and manage properties</span>
-                <p>
-                  Landlording made simple, whether you have one rental or an
-                  entire portfolio.
-                </p>
-              </div>
-            </div>
+          <div class="col-md-6 img_text_container">
+            <h1>Why PILLOW is The Right Choice For You</h1>
+            <span class="title">Fill vacancies and manage properties</span>
+            <p>
+              Landlording made simple, whether you have one rental or an entire
+              portfolio.
+            </p>
+            <span class="title"> Over 30 million visitors each month</span>
+            <p>
+              Your property will be listed across PILLOW, Trulia and HotPads to
+              help you find your perfect renter.
+            </p>
+            <span class="title">A brand you can trust</span>
+            <p>
+              Landlord tools built by industry experts and the brand that knows
+              real estate.
+            </p>
+            <button class="btn btn-lg btn-outline-primary">Get Started</button
+            ><a
+              style="font-size: 20px; text-decoration: none; margin-left: 10px"
+              href="#"
+              >Learn More</a
+            >
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--Whyus Ended-->
+    <div class="landbord">
+      <div class="title">
+        <h2>It's easier than ever to be a landlord</h2>
+        <p>
+          Save time with our property management tools that help you get what
+          you need — signed leases and rent payments.
+        </p>
+      </div>
+      <div class="container">
+        <div class="roww">
+          <div class="column text">
+            <h4>Post a rental listing</h4>
+            <p>
+              Easy-to-use tools let you list your property where millions of
+              renters search each month. Plus, messaging and tenant screening
+              are integrated into our listing platform to help you find and
+              screen applicants faster.
+            </p>
+            <button class="btn btn-lg btn-outline-primary">Get started</button>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="column img">
+            <img
+              src="/resources/pexels-terry-magallanes-2635038.jpg"
+              class="img-fluid backimg"
+            />
+            <img src="/resources/first.png" class="img-fluid" />
+          </div>
+        </div>
+        <div class="roww left">
+          <div class="column img">
+            <img src="/resources/backsecond.jpg" class="img-fluid backimg" />
+            <img src="/resources/second.png" class="img-fluid" />
+          </div>
+          <div class="column text">
+            <h4>Screen tenants with online rental applications</h4>
+            <p>
+              Sign your next tenant with confidence using our online rental
+              applications. Save time with credit reports, background checks,
+              eviction history and income verification – all in one place.
+            </p>
+            <button class="btn btn-lg btn-outline-primary">
+              Accept applications
+            </button>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="roww">
+          <div class="column text">
+            <h4>Sign a rental lease</h4>
+            <p>
+              Create your rental lease using our online lease builder and
+              templates drafted with local law firms, or upload your own lease
+              and e-sign it with your renters.
+            </p>
+            <button class="btn btn-lg btn-outline-primary">
+              Create a lease
+            </button>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="column img">
+            <img src="/resources/backthird.jpg" class="img-fluid backimg" />
+            <img src="/resources/Third.png" class="img-fluid" />
+          </div>
+        </div>
+        <div class="roww left">
+          <div class="column img">
+            <img
+              src="/resources/pexels-terry-magallanes-2635038.jpg"
+              class="img-fluid backimg"
+            />
+            <img src="/resources/first.png" class="img-fluid" />
+          </div>
+          <div class="column text">
+            <h4>Collect rent payments</h4>
+            <p>
+              The convenient way for landlords to get paid. Rent, utilities,
+              move-in fees and more are deposited straight into your bank
+              account — at no cost to you.
+            </p>
+            <button class="btn btn-lg btn-outline-primary">Get paid</button>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="roww">
+          <div class="column text">
+            <h4>Your first listing is free Every listing includes:</h4>
+            <div class="right">
+              <i class="bi bi-check"></i>Posting to PILLOW, Trulia and HotPads
+            </div>
+            <div class="right">
+              <i class="bi bi-check"></i>Tenant screening with background and
+              credit checks
+            </div>
+            <div class="right"><i class="bi bi-check"></i>Online leases</div>
+            <div class="right">
+              <i class="bi bi-check"></i>Online rent payments
+            </div>
+            <p>
+              Additional active listings are $9.99/week and are backed by our
+              Lead Guarantee.
+            </p>
+            <button class="btn btn-lg btn-primary">Get started</button>
+          </div>
+          <div class="column img">
+            <img
+              src="/resources/backfivth.jpg"
+              class="img-fluid backimg last"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="saying">
+      <div class="container">
+        <div class="text">
+          <h2>Here's what others are saying</h2>
+        </div>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="content">
+                <h4>
+                  PILLOW Rental Manager is awesome! Rented two houses in two
+                  days!”
+                </h4>
+                <h5>Jeff, Property Manager, Chicago, IL</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="content">
+                <h4>
+                  PILLOW Rental Manager is awesome! Rented two houses in two
+                  days!”
+                </h4>
+                <h5>Jeff, Property Manager, Chicago, IL</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content">
+                <h4>
+                  "PILLOW Rental Manager is awesome! Rented two houses in two
+                  days!"
+                </h4>
+                <h5>Jeff, Property Manager, Chicago, IL</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+            id="slide1"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            id="slide2"
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="Rent">
+      <div class="layer">
+        <div class="container">
+          <div class="text">
+            <h2>Rent with confidence</h2>
+            <h5>
+              Take the hassle out of landlording with PILLOW Rental Manager.
+              Post a listing, screen tenants, sign a lease and collect payments
+              all in one place.
+            </h5>
+            <button class="btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app">
+      <div class="container">
+        <div class="text">
+          <h2>Get the app</h2>
+          <h5>Use PILLOW Rental Manager anywhere, anytime</h5>
+          <form action="#">
+            <div class="form-floating">
+              <input
+                type="text"
+                placeholder="Enter Your Number"
+                class="form-control"
+                name="text"
+                id="text"
+              />
+              <label for="text">Enter Your Number</label>
+            </div>
+            <button>Get The App</button>
+          </form>
+          <p>
+            US mobile numbers only. Message and data rates apply. I agree to
+            receive a one-time text message containing a link to download the
+            PILLOW Rental Manager app at the mobile number I provide above, and
+            I confirm that the mobile number is mine.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="roww">
+          <div class="column first">
+            <span class="spany"
+              ><h3>
+                <span>PILL</span><i class="bi bi-house-fill"></i><span>W</span>
+              </h3></span
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              voluptate
+            </p>
+            <div class="social">
+              <i class="bi bi-facebook"></i><i class="bi bi-github"></i
+              ><i class="bi bi-instagram"></i>
+            </div>
+          </div>
 
+          <div class="column links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <i class="bi bi-arrow-right-short"></i><a href="#"> Home </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <i class="bi bi-arrow-right-short"></i
+                ><a href="#"> Features </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <i class="bi bi-arrow-right-short"></i
+                ><a href="#"> Products </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <i class="bi bi-arrow-right-short"></i><a href="#"> Reviews </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <i class="bi bi-arrow-right-short"></i><a href="#"> Reviews </a>
+              </li>
+            </ul>
+          </div>
+          <div class="column contact">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <i class="bi bi-telephone-fill"></i
+                ><a href="#">+212762544585</a>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill"></i
+                ><a href="#">+212762544585</a>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill"></i>
+                <a href="#">+212762544585</a>
+              </li>
+              <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                <a href="#">+212762544585</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column NewsLeller">
+            <h3>NewsLeller</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <form action="#">
+              <input autocomplete="off" type="text" placeholder="Your Email" />
+              <button>Subscribe</button>
+            </form>
+            <img src="/resources/payment.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--My Javascript-->
     <script src="/javascript/index.js"></script>
     <!--My Javascript Ended-->
